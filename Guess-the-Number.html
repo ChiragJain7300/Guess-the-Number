@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <style>
+        .gameCont{
+            width: 40%;
+            margin: 60px auto;
+            text-align: center;
+            padding: 30px;
+            background-color: brown;
+            border-radius: 15px;
+        }
+        input{
+            font-size: 25px;
+            width: 250px;
+            padding: 12px;
+            display: block;
+            margin: 25px auto;
+            border: 5px solid grey;
+            text-align: center;
+            font-weight: bold;
+        }
+        button{
+            font-weight: bold;
+            font-size: 16px;
+            padding: 15px 25px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body style="background-color: black; color: aquamarine;">
+    <div class="gameCont">
+        <h1 style="text-align: center; font-size: 44px; text-transform: uppercase;">Guess The Number</h1>
+
+        <input type="number" id="guessValue">
+
+        <button id="subBtn">Submit Your Guess</button>
+
+        <p>Previous Guesses: { <span class="guessNumArray"></span> }</p>
+
+        <p>Guesses Remaining: { <span class="RemainingGuess"></span> }</p>
+        <p class="gameResult"></p>
+    </div>
+
+
+    <script src="guessNumJs.js"></script>
+</body>
+</html>
